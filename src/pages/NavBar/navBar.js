@@ -64,13 +64,14 @@ window.addEventListener('resize', showButton);
                        
                     </NavItem>
                     <NavItem>
-                       <NavDropdown title="dropdown" id="basic-nav-dropdown" style={{
+                    <NavLinks to="/projectOne">project1</NavLinks>
+                       {/* <NavDropdown title="dropdown" id="basic-nav-dropdown" style={{
                            
                        }}>
                            <NavDropdown.Item href="/projectOne"> project1</NavDropdown.Item>
                            <NavDropdown.Item href="#action1"> project2</NavDropdown.Item>
-                           <NavDropdown.Item href="#action1"> project3</NavDropdown.Item>
-                       </NavDropdown>
+                           <NavDropdown.Item href="#action1"> project3</NavDropdown.Item> */}
+                       {/* </NavDropdown> */}
                        
                     </NavItem>
                     
