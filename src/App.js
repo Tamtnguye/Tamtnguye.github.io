@@ -4,7 +4,7 @@ import React, {useState} from "react";
 import {Navbar, Footer, ScrollTop} from "./pages";
 
 import GlobalStyle from "./GlobalStyles";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as HashRouter,Router, Route, Switch} from "react-router-dom";
 import Carousels from './CarouselStyle';
 import {ProjectOne } from "./pages/ProjectOne/projectOne";
 import {About} from "./pages/about/About";
@@ -16,7 +16,7 @@ function App() {
   
   return (
     <div>
-      <Router>
+      <HashRouter basename='/'>
       <GlobalStyle /> 
       <Navbar />
      
@@ -30,7 +30,7 @@ function App() {
  <Route  component={NoMatch} />
       </Switch>
       <Footer />
-      </Router>
+      </HashRouter>
     </div>
   );
 }
