@@ -6,6 +6,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+
+### `npm run deploy`
+to build the static pages
+
+then next you will do git add
+git commit
+git push <"insert your branch">
+
+
 ### `npm start`
 
 Runs the app in the development mode.\

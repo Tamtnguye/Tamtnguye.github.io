@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+//import Carousel from 'react-bootstrap/Carousel';
+import React, {useState} from "react";
+
+import {Navbar, Footer, ScrollTop} from "./pages";
+
+import GlobalStyle from "./GlobalStyles";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Carousels from './CarouselStyle';
+import {ProjectOne } from "./pages/ProjectOne/projectOne";
+import {About} from "./pages/about/About";
+import {NoMatch} from './NoMatch';
+
 
 function App() {
+  
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+      <GlobalStyle /> 
+      <Navbar />
+     
+     
+
+      <Switch>
+        <Route path="/" exact component={Carousels} />
+      <Route  path="/about" component={About} />
+ <Route  path="/projectOne" component={ProjectOne} />
+
+ <Route  component={NoMatch}
+ />
+      </Switch>
+      <Footer />
+      </Router>
     </div>
   );
 }
