@@ -27,8 +27,7 @@ function App() {
       <Route  path="/about" component={About} />
  <Route  path="/projectOne" component={ProjectOne} />
 
- <Route  component={NoMatch}
- />
+ <Route  component={NoMatch} />
       </Switch>
       <Footer />
       </Router>
